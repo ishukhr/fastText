@@ -222,7 +222,7 @@ bool Dictionary::readWord(std::istream& in, std::string& word) const {
         if (c == '\n')
           sb.sungetc();
         return true;
-      }
+          }
     }
     word.push_back(c);
   }
@@ -536,5 +536,4 @@ void Dictionary::dump(std::ostream& out) const {
     out << it.word << " " << it.count << " " << entryType << std::endl;
   }
 }
-
 } // namespace fasttext
